@@ -29,7 +29,7 @@ pub struct OrcaDexWhirpools {
 }
 impl OrcaDexWhirpools {
     pub fn new(mut dex: Dex) -> Self {
-        // Orca 要用 RPC 查链补全信息，而 Meteora 等则不用
+        // Orca 要用 RPC 查链，而 Meteora 等则不用
         let env = Env::new();
         let rpc_client = RpcClient::new(env.rpc_url);
 
